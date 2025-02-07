@@ -1,0 +1,99 @@
+/* Root Colors */
+:root {
+    --white-color: #ffffff;
+    --primary-color: #535DA1;
+    --secondary-color: #FF8A1D;
+    --section-bg-color: #f9f9f9;
+    --dark-color: #000000;
+    --p-color: #717275;
+    --border-color: #e9eaeb;
+    --featured-border-color: #727aab;
+}
+
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--section-bg-color);
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-nav .nav-link {
+    color: var(--white-color);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Main Heading */
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Paragraph */
+p {
+    color: var(--p-color);
+}
+
+/* Vocabulary Cards */
+.doc-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    background-color: var(--white-color);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.doc-card:hover {
+    transform: translateY(-10px);
+}
+
+.doc-card h3 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+.doc-card a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.doc-card a:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
