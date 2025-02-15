@@ -1,33 +1,14 @@
-/* Menülerin hover ile açılmasını sağla */
-.nav-item.dropdown:hover .dropdown-menu {
+/* Ana menü hover ile açılacak */
+.nav-item.dropdown:hover>.dropdown-menu {
     display: block;
-    margin-top: 0;
-    left: 0;
-    right: auto;
-    position: absolute;
-    top: 100%;
 }
 
-/* Açılır menü tasarımı */
-.dropdown-menu {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    min-width: 200px;
-}
-
-/* Menü öğeleri tasarımı */
-.dropdown-item {
+/* Alt menülerin hover ile açılması */
+.dropdown-submenu {
     position: relative;
-    padding: 10px 20px;
-    color: #333;
-    transition: background 0.3s ease-in-out;
-    white-space: nowrap;
 }
 
-/* Alt menü tasarımı */
-.submenu {
+.dropdown-submenu>.submenu {
     display: none;
     position: absolute;
     left: 100%;
@@ -37,14 +18,16 @@
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     min-width: 150px;
-    list-style: none;
     padding: 0;
+    z-index: 1000;
 }
 
-.dropdown-item:hover .submenu {
+/* Sadece hover olunca alt menü açılacak */
+.dropdown-submenu:hover>.submenu {
     display: block;
 }
 
+/* Alt menü içeriği */
 .submenu li {
     list-style: none;
 }
@@ -64,4 +47,24 @@
 /* Languages dropdown da hover ile açılacak şekilde ayarlandı */
 .nav-item.dropdown:hover .dropdown-menu[aria-labelledby="languagesDropdown"] {
     display: block;
+}
+
+/* Dropdown menü öğeleri */
+.dropdown-item {
+    padding: 10px 20px;
+    color: #333;
+    transition: background 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+/* Dropdown menü öğelerinin hover durumu */
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+
+/* Aktif dil seçeneği */
+.dropdown-item.active {
+    background-color: #007bff;
+    color: #fff;
 }

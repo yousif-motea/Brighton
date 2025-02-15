@@ -1,0 +1,151 @@
+/* Videos section styles */
+.videos {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #535DA1 !important; /* Navbar arka plan rengi */
+    margin-bottom: 40px; /* Navbar ile içerik arasına boşluk */
+    padding: 1px 0; /* Navbar yüksekliği ve iç boşluk */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff; /* Navbar yazısının rengi (beyaz) */
+    display: flex;
+    justify-content: center; /* Yatayda ortalama */
+    align-items: center; /* Dikeyde ortalama */
+    text-align: center;
+    width: 100%; /* Tam genişlik */
+}
+
+.navbar-brand img {
+    margin-right: 20px; /* Logo ile yazı arasındaki boşluğu artırır */
+}
+
+.navbar-brand span {
+    color: #ffffff; /* Yazı rengi beyaz */
+    transition: color 0.3s ease; /* Renk geçiş efekti */
+}
+
+.navbar-brand:hover span {
+    color: #FF8A1D; /* Fare üzerine gelince yazı rengi turuncu olsun */
+}
+
+/* Navbar yazısının rengini değiştirmek için */
+.navbar-brand.custom-color {
+    color: #FF8A1D; /* Turuncu renk örneği */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FF8A1D;
+}
+
+/* Video Thumb (Kartlar) */
+.video-thumb {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* Kartlar arasına boşluk */
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.video-thumb:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.video-thumb img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Video Info */
+.video-info {
+    margin-top: 15px;
+}
+
+.video-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #333; /* Başlık yazısı koyu gri */
+}
+
+.video-description {
+    font-size: 1rem;
+    color: #666; /* Açıklama yazısı daha açık gri */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #535DA1;
+    color: #ffffff;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Section Padding */
+.videos.section-padding {
+    padding-top: 130px; /* Büyük ekranlar için */
+}
+
+/* Responsive Tasarım için Medya Sorguları */
+@media (max-width: 768px) {
+    .videos.section-padding {
+        padding-top: 80px; /* Tablet ve mobil cihazlar için daha az padding */
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem; /* Mobil cihazlarda yazı boyutunu küçült */
+    }
+
+    /* Footer ve navbar yazı renkleri */
+    .navbar, footer {
+        background-color: #535DA1;
+    }
+
+    .navbar-nav .nav-link, .navbar-brand span {
+        color: #ffffff; /* Yazı beyaz */
+    }
+
+    .videos-title, .video-title, .video-description {
+        color: #333; /* Başlıklar ve açıklamalar için koyu gri renk */
+    }
+}
+
+@media (max-width: 576px) {
+    .videos.section-padding {
+        padding-top: 60px; /* Küçük mobil cihazlar için daha az padding */
+    }
+
+    .navbar-brand {
+        font-size: 1rem; /* Daha küçük yazı boyutu */
+    }
+
+    /* Footer ve navbar yazı renkleri */
+    .navbar, footer {
+        background-color: #535DA1;
+    }
+
+    .navbar-nav .nav-link, .navbar-brand span {
+        color: #ffffff; /* Yazı beyaz */
+    }
+
+    .videos-title, .video-title, .video-description {
+        color: #333; /* Başlıklar ve açıklamalar için koyu gri renk */
+    }
+}
